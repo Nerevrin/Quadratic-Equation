@@ -51,3 +51,14 @@ CTEST2(test_data, a_zero)
 }
 
 
+CTEST2(test_data, zero) 
+{
+	data->a=0;
+	data->b=0;
+	data->c=0;
+	data->ex_flg = 3;
+	
+	data->real_flg=  equation(data->a, data->b, data->c, data->root);
+	ASSERT_EQUAL(data->ex_flg, data->real_flg);	
+}
+	
