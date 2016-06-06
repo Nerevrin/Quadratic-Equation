@@ -51,7 +51,7 @@ CTEST2(test_data, a_zero)
 }
 
 
-CTEST2(test_data, zero) 
+CTEST2(test_data, SANYAISTHEBEST) 
 {
 	data->a=0;
 	data->b=0;
@@ -61,4 +61,5 @@ CTEST2(test_data, zero)
 	data->real_flg=  equat(data->a, data->b, data->c, data->root);
 	ASSERT_EQUAL(data->ex_flg, data->real_flg);	
 }
+
 	
