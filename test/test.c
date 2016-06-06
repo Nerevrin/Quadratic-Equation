@@ -23,7 +23,7 @@ CTEST2(test_data, test_d1)
     data->c = 2;
     
     data->ex_d= 1;
-	data->real_d = discriminant(data->a, data->b, data->c);
+	data->real_d = discr(data->a, data->b, data->c);
 	ASSERT_EQUAL(data->ex_d, data->real_d);
 }
 
@@ -34,7 +34,7 @@ CTEST2(test_data, test_d2)
     data->c = 3;
     
     data->ex_d = -1;
-	data->real_d = discriminant(data->a, data->b, data->c);
+	data->real_d = discr(data->a, data->b, data->c);
 	ASSERT_EQUAL(data->ex_d, data->real_d);
 }
 
@@ -45,7 +45,7 @@ CTEST2(test_data, a_zero)
 	data->c = 2;
 	data->ex_flg = 1;
 	
-	data->real_flg = equation(data->a, data->b, data->c, data->root);
+	data->real_flg = equat(data->a, data->b, data->c, data->root);
 	
 	ASSERT_EQUAL(data->ex_flg, data->real_flg);
 }
