@@ -3,7 +3,7 @@
  #include <math.h>
  #include <stdio.h>
  
-int main() {
+Void main() {
 	int a, b, c;
 	float root[1];
 	
