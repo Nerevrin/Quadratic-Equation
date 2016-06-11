@@ -62,4 +62,5 @@ CTEST2(test_data, SANYAISTHEBEST)
 	ASSERT_EQUAL(data->ex_flg, data->real_flg);	
 }
 
+()
 	
